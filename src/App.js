@@ -1,8 +1,10 @@
 
 import { useState } from 'react';
 import './App.css';
-import { Form } from './components/Form';
-import { Team } from './components/Team';
+import Banner from './components/Banner';
+import  {Form}  from './components/Form';
+import  {Team}  from './components/Team';
+import  Footer  from './components/Footer';
 
 
 
@@ -36,11 +38,12 @@ function App() {
   } 
 
   return (
-    <div className="App">
+        <div className="App">
+      <Banner/>
       <Form title={teans.map(team => team.title)} saveUser={user=>salvando(user) }></Form>
+      {teans.map((team,index) => <Team users={users.filter(user=> user.time === team.title)} key={index} title={team.title} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor}/>)}
+      <Footer/>
 
-      {teans.map(team => <Team users={users.filter(user=> user.time === team.title)} key={team.title} title={team.title} primaryColor={team.primaryColor} secondaryColor={team.secondaryColor}/>)}
-      
       
     </div>
   );

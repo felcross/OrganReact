@@ -13,7 +13,7 @@ return(
         <div className='footer'>
          <h4>{nome}</h4>
          <h5>{cargo}</h5>
-         <h5>{time}</h5>
+         
         </div>
     
     </div>
