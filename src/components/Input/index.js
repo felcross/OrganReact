@@ -11,9 +11,9 @@ const ontyping =(event) =>{
    
 }
 
- return(  <div className="input">
+ return(  <div className={`input input${props.type}`}>
     <label>{props.label}</label>
-    <input value={props.value} onChange={ontyping} required={props.required}  placeholder={`${props.placeholder}...`} />
+    <input value={props.value} onChange={ontyping} required={props.required} type={props.type}placeholder={`${props.placeholder}...`} />
    </div>)
 
 }

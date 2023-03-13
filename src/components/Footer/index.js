@@ -27,7 +27,7 @@ const Footer = () => {
        </section>
        <section>
         <p>
-            Desenvolvido por Alura.
+            Desenvolvido para teste de conhecimento.
         </p>
        </section>
     </footer>)
