@@ -1,4 +1,4 @@
-# Projeto React OrganReact
+# Projeto OrganReact
 
 Projeto simples aonde se cria uma equipe e cards de colaboradores para fazer parte da equipe.
 
